@@ -11,17 +11,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media(max-width: 500px){
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media(max-width: 500px){
+        width: 90%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media(max-width: 500px){
+        width: 90%;
+      }
 
       img {
         border-radius: 10px;
@@ -32,6 +41,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media(max-width: 500px){
+      width: 90%;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -58,10 +71,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 500px){
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media(max-width: 500px){
+        padding: 2rem 2rem;
+        margin: 0 auto;
+        width: 60%;
+      }
+      
       .btn{
         .text-align(center);
         .button-border(3px solid);

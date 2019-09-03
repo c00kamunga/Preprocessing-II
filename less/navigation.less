@@ -2,13 +2,19 @@
 
 
 .top-content{
+    margin: 2rem 2rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     justify-content: space-evenly;
     align-items: baseline;
     flex-direction: row;
-    a{
+    @media(max-width: 500px){
+        flex-direction: column;
+        justify-content: center;
+    }
+    a{  
+        font-size: 2rem;
         color: black;
         text-decoration: none;
         padding: 0 1rem 0 1rem;
