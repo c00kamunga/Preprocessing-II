@@ -172,8 +172,14 @@ img {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  justify-content: space-evenly;
   align-items: baseline;
   flex-direction: row;
+}
+.top-content a {
+  color: black;
+  text-decoration: none;
+  padding: 0 1rem 0 1rem;
 }
 .footer {
   width: 100%;
@@ -239,4 +245,7 @@ img {
   flex-direction: column;
   margin: 0 auto;
   width: 42%;
+}
+.welcome .bus {
+  padding-bottom: 2rem;
 }
